@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simple Parallax website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/assets/style/bulma.min.css'>
+</head>
+<body>
+    
+    <div class="wrapper" id="wrapper">
+        <header id="beforeScroll">
+            <img src="/assets/images/bg.png" class="background">
+            <img src="/assets/images/stars.png" class="foreground stars">
+            <img src="/assets/images/moon.png" class="foreground moon">
+            <img src="/assets/images/birds.png" class="foreground birds">
+            
+            <img src="/assets/images/ice.png" class="foreground ice">
+
+            <img src="/assets/images/mount 2.1.png" class="foreground mount21">
+            <img src="/assets/images/mount 2.2.png" class="foreground mount22">
+            <img src="/assets/images/mount1.png" class="foreground mount1">
+            <img src="/assets/images/sea.png" class="foreground sea">
+
+            <img src="/assets/images/floor.png" class="foreground cc">
+            <a class="mouse" href="#aterScroll">
+                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326 504" width="460" height="773">
+                    <defs>
+                        <image  width="468" height="512" id="img1" href="data:image/png;base64,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"/>
+                    </defs>
+                    <style>
+                    </style>
+                    <use id="Layer 1" href="#img1" x="-140" y="-4"/>
+                </svg>
+            </a>
+        </header>
+        <div class="content" id="aterScroll">
+            <div class="theBox">
+                <section class="aftero container block">
+                    <div class="timeline">
+                        <div class="boxesCont is-flex is-justify-content-space-evenly">
+                            <div class="boxet active">
+                                <img src="/assets/images/1.jpg" tit="Parallax" alt="!mine ,leV .aiuq orev euqae tidepmi maspi ,ni tu tiredneherper seroiam merolod taecalp tido rolod otcetihcra mairepa ,siroproc mauqsiuq sutceled tnedivorp metuA .tile gnicisipida rutetcesnoc tema tis rolod muspi meroL">
+                            </div>
+                            <div class="boxet">
+                                <img src="/assets/images/2.jpg" tit="Imageto" alt="meroL muspi rolod tis tema rutetcesnoc gnicisipida tile. metuA tnedivorp sutceled mauqsiuq siroproc, mairepa otcetihcra rolod tido taecalp merolod seroiam tiredneherper tu ni, maspi tidepmi euqae orev aiuq. leV, mine! ">
+                            </div>
+                            <div class="boxet">
+                                <img src="/assets/images/3.jpg" tit="Hoooowaa" alt="loreM ipsum dolor sit amet consectetur adipisicing elit. auteM provident delectus quisquam corporis, aperiam architecto dolor odit placeat dolorem maiores reprehenderit ut in, ipsam impedit eaque vero quia. veL, enim!">
+                            </div>
+                            <div class="boxet">
+                                <img src="/assets/images/4.jpg" tit="Meooooow" alt="!enim ,Vel .quia vero eaque impedit ipsam ,in ut reprehenderit maiores dolorem placeat odit dolor architecto aperiam ,corporis quisquam delectus provident Autem .elit adipisicing consectetur amet sit dolor ipsum Lorem">
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="columns">
+                        <div class="column is-6">
+                            <div class="margined">
+                                <img src="/assets/images/1.jpg" alt="" class="grayeffect simage bordered" id="imagePlace">
+                            </div>                        
+                        </div>
+                        <div class="column is-6">
+                            <div class="margined">
+                                <h1 class="title is-1 has-text-white" id="titlePlace">Parallax</h1>
+                                <p class="is-size-5 has-text-grey-lighter" id="descriptionPlace">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem provident delectus quisquam corporis, aperiam architecto dolor odit placeat dolorem maiores reprehenderit ut in, ipsam impedit eaque vero quia. Vel, enim!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 204" width="1400" height="198" class="btmSvg">
+                    <defs>
+                        <linearGradient id="g1" x1="0" y1="98.3" x2="1440" y2="98.3" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" stop-color="#1a0f2c"/>
+                            <stop offset="1" stop-color="#201438"/>
+                        </linearGradient>
+                    </defs>
+                    <style>
+                        .s0 { fill: url(#g1) } 
+                    </style>
+                    <path id="Layer" class="s0" d="m169.5 35.2c60.5 3.6 120.9 7.1 181 16 60.1 9.2 119.9 22.8 178.5 58.9 58.5 35.5 115.8 93.4 176.9 85.9 61-7.6 125.8-78.6 188.5-113 62.6-34 123-30.5 184.1-37.8 61-6.8 122.8-25.4 183.8-32.2 61.1-7.3 177.7-13 177.7-13h-1440c0 0 109.1 31.7 169.5 35.2z"/>
+                </svg>
+            </div>
+
+            <div style="background-color: #2a8cde" class="" id="textsCont">
+            </div>
+
+        </div>
+        <div class="partial-circle" id="scrollCircle" onclick="window.location = '#beforeScroll'">
+            <img src="/assets/images/up.png" alt="">
+        </div>
+    </div>
+
+    
+</body>
+</html>
+<script src='/assets/script/main.js'></script>
