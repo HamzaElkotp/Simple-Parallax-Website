@@ -216,6 +216,7 @@ header img{
     border-radius: 50%;
     cursor: pointer;
     z-index: 100;
+    border: 2px solid #fff;
 }
 .partial-circle::before {
     content: '';
@@ -235,4 +236,30 @@ header img{
     left: 50%;
     top: 48%;
     transform: translate(-50%, -50%);
+}
+
+.content{
+    margin-bottom: 0 !important;
+}
+
+.about{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2a8cde;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #201438;
+}
+
+
+.footer {
+    background-color: #36275b !important;
+    padding: 1.5rem !important;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+}
+.footer span{
+    color: #2a8cde;
+    font-weight: 600;
 }
